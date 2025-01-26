@@ -518,6 +518,7 @@ body.scrolled .page-header {
 /* Learn more link*/
 .learn-more {
   display: flex;
+  gap: 0 5px;
   color: var(--primary-color);
   font-size: 18px;
   font-weight: 600;
@@ -527,7 +528,6 @@ body.scrolled .page-header {
 .learn-more-link {
   display: inline-flex;
   align-items: center;
-  margin-left: 5px;
   color: #146ef5;
   text-decoration: none;
 
@@ -791,7 +791,7 @@ body.scrolled .page-header {
   left: 0;
   right: 0;
   height: 1000px;
-  background: radial-gradient(circle at top, #146ef5 -150%, transparent 80%);
+  background: radial-gradient(circle at top, #146ef5 -50%, transparent 80%);
 }
 
 .cta-button {
@@ -1019,6 +1019,7 @@ body.scrolled .page-header {
   .section-title {
     font-size: 50px;
     line-height: 116.667%;
+    text-wrap: balance;
   }
 
   .preview-img {
@@ -1070,6 +1071,7 @@ body.scrolled .page-header {
   .embed-section {
     .section-text {
       margin-bottom: clamp(40px, 5vw, 80px);
+      text-wrap: balance;
     }
     .section-wrapper {
       padding-bottom: clamp(40px, 5vw, 80px);
@@ -1395,7 +1397,7 @@ body.scrolled .page-header {
   }
 
   .learn-more {
-    display: block;
+    flex-wrap: wrap;
   }
 
   .embed-demo {
